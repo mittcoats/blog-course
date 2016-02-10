@@ -157,6 +157,10 @@ input[type="text"], input[type="email"], input[type="password"], textarea {
 	border: 2px solid $border;
 	padding: 1em;
 	margin: .5em 0 2em 0;
+	&:focus {
+		box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  	border: 1px solid rgba(81, 203, 238, 1);
+	}
 }
 
 textarea {
@@ -181,7 +185,11 @@ input[type="submit"], .button {
 	background: $highlight;
 	color: $white;
 	text-decoration: none;
-	padding: 1em 2em;
+	padding: .5em 2em;
+	margin: 1em .5em;
+	&:hover {
+		border: 1px solid $dark;
+	}
 }
 
 .button_wrapper {
